@@ -1,44 +1,59 @@
-<!DOCTYPE html><html lang='vi'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Nguyễn Khánh Chi – Portfolio</title><style>
-:root{--bg:#0f1420;--card:#1a2233;--card2:#212b40;--text:#e8ecf4;--muted:#9aa7bd;--accent:#5b8cff;--accent2:#8f6cff;--gold:#f5b94c}
+<!DOCTYPE html><html lang='vi'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Nguyễn Khánh Chi – Portfolio</title><link rel='preconnect' href='https://fonts.googleapis.com'><link rel='preconnect' href='https://fonts.gstatic.com' crossorigin><link href='https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap' rel='stylesheet'><style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}
-a{color:var(--accent);text-decoration:none}
+img{max-width:100%}
 .container{max-width:1000px;margin:0 auto;padding:0 24px}
-header{background:linear-gradient(135deg,#16203a 0%,#1d1a3f 60%,#2a1b45 100%);padding:72px 0 56px;text-align:center;border-bottom:1px solid #2c3a57}
-.avatar{width:132px;height:132px;border-radius:50%;object-fit:cover;border:4px solid var(--accent);box-shadow:0 8px 32px rgba(91,140,255,.35);margin-bottom:20px}
-.monogram{width:132px;height:132px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:44px;font-weight:700;background:linear-gradient(135deg,var(--accent),var(--accent2));margin-bottom:20px;color:#fff}
-h1{font-size:2.4rem;letter-spacing:.5px}
-.school{color:var(--muted);margin-top:8px;font-size:1.05rem}
-.tagline{margin-top:14px;display:inline-block;background:rgba(91,140,255,.12);border:1px solid rgba(91,140,255,.4);padding:8px 20px;border-radius:999px;color:#bcd0ff;font-size:.95rem}
-.stats{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:32px}
-.stat{background:var(--card);border:1px solid #2c3a57;border-radius:14px;padding:16px 26px;min-width:170px}
-.stat b{display:block;font-size:1.5rem;color:var(--gold)}
-.stat span{color:var(--muted);font-size:.85rem}
-section{padding:48px 0 8px}
-h2{font-size:1.5rem;margin-bottom:22px;display:flex;align-items:center;gap:10px}
-h2::before{content:"";width:6px;height:26px;border-radius:3px;background:linear-gradient(var(--accent),var(--accent2))}
-.card{background:var(--card);border:1px solid #2c3a57;border-radius:16px;padding:22px 24px;margin-bottom:16px}
-.card h3{font-size:1.08rem;margin-bottom:6px}
-.card .org{color:var(--muted);font-size:.9rem}
-.card p{margin-top:10px;color:#c6cfdf;font-size:.95rem}
-.badge{display:inline-block;background:rgba(245,185,76,.14);color:var(--gold);border:1px solid rgba(245,185,76,.4);padding:2px 12px;border-radius:999px;font-size:.78rem;margin-bottom:8px}
+section{padding:44px 0 6px}
+.stats{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:30px}
 .doclinks{margin-top:12px;display:flex;flex-wrap:wrap;gap:8px}
-.doclinks a{background:var(--card2);border:1px solid #35476b;padding:6px 14px;border-radius:8px;font-size:.85rem}
-.doclinks a:hover{border-color:var(--accent)}
-.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px;margin-top:14px}
-.gallery a{display:block;aspect-ratio:4/3;overflow:hidden;border-radius:10px;border:1px solid #2c3a57}
-.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .25s}
-.gallery img:hover{transform:scale(1.06)}
-.research{border-left:4px solid var(--accent2)}
-.doi{font-family:Consolas,monospace;font-size:.85rem;color:var(--muted)}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px;margin-top:14px}
+.gallery a{display:block;aspect-ratio:4/3;overflow:hidden}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .3s}
+.gallery a:hover img{transform:scale(1.07)}
 .certgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
-.empty{color:var(--muted);font-style:italic;background:var(--card);border:1px dashed #35476b;border-radius:12px;padding:18px 22px}
-footer{margin-top:56px;padding:28px 0;border-top:1px solid #2c3a57;color:var(--muted);text-align:center;font-size:.85rem}
-.certimg{max-width:520px;width:100%;border-radius:12px;border:1px solid #2c3a57;margin-top:14px}
-.lang-switch{position:fixed;top:16px;right:16px;z-index:99;display:flex;gap:2px;background:rgba(15,20,32,.85);border:1px solid #2c3a57;border-radius:999px;padding:4px;backdrop-filter:blur(6px)}
-.lbtn{border:0;background:transparent;color:var(--muted);padding:5px 14px;border-radius:999px;cursor:pointer;font-size:.85rem;font-weight:600}
-.lbtn.active{background:var(--accent);color:#fff}
+.certimg{max-width:520px;width:100%;margin-top:14px}
+.avatar{width:132px;height:132px;border-radius:50%;object-fit:cover}
+.monogram{width:132px;height:132px;display:inline-flex;align-items:center;justify-content:center;font-size:44px;font-weight:700}
+.lang-switch{position:fixed;top:14px;right:14px;z-index:99;display:flex;gap:2px;border-radius:999px;padding:4px}
+.lbtn{border:0;background:transparent;padding:5px 14px;border-radius:999px;cursor:pointer;font-size:.85rem;font-weight:700}
 .pane-en{display:none}
 body.lang-en .pane-en{display:block}
 body.lang-en .pane-vi{display:none}
+footer{margin-top:56px;padding:28px 0;text-align:center;font-size:.85rem}
+
+body{font-family:'Be Vietnam Pro',sans-serif;background:#f4f8f1;color:#22371f;line-height:1.75;
+ background-image:repeating-radial-gradient(circle at 120% -20%,transparent 0 60px,rgba(22,101,52,.045) 60px 61px),
+   repeating-radial-gradient(circle at -20% 120%,transparent 0 80px,rgba(22,101,52,.04) 80px 81px)}
+header{padding:88px 0 60px;text-align:center;position:relative;
+ background:linear-gradient(165deg,#dcefd4 0%,#eaf5e3 55%,#f4f8f1 100%);border-bottom:2px solid #cfe3c4}
+.avatar{border:5px solid #fff;box-shadow:0 12px 34px rgba(22,101,52,.25);margin-bottom:20px}
+.monogram{border-radius:50% 50% 50% 8px;background:linear-gradient(135deg,#16a34a,#166534);color:#fff;margin-bottom:20px;
+ box-shadow:0 12px 34px rgba(22,101,52,.3)}
+h1{font-size:2.7rem;font-weight:700;color:#14301c}
+.school{color:#4c7345;margin-top:8px;font-weight:500}
+.tagline{margin-top:16px;display:inline-block;background:#fff;border:1px solid #cfe3c4;color:#166534;
+ padding:9px 24px;border-radius:999px 999px 999px 4px;font-size:.93rem;font-weight:600;box-shadow:0 5px 18px rgba(22,101,52,.12)}
+.tagline::before{content:"🌿 "}
+.stat{background:#fff;border:1px solid #d8e9cf;border-radius:18px 18px 18px 4px;padding:16px 26px;min-width:170px;box-shadow:0 6px 20px rgba(22,101,52,.08)}
+.stat b{display:block;font-size:1.55rem;color:#15803d;font-weight:700}
+.stat span{color:#5f8257;font-size:.84rem}
+h2{font-size:1.5rem;margin-bottom:22px;color:#14301c;font-weight:700;display:flex;align-items:center;gap:10px}
+h2::before{content:"";width:12px;height:24px;border-radius:8px 8px 8px 2px;background:linear-gradient(#4ade80,#166534);transform:rotate(20deg)}
+.card{background:#fff;border:1px solid #dcebd3;border-radius:20px 20px 20px 5px;padding:22px 26px;margin-bottom:16px;
+ box-shadow:0 5px 18px rgba(22,101,52,.06);transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(22,101,52,.14)}
+.card h3{font-size:1.1rem;color:#14301c;font-weight:600}
+.card .org{color:#5f8257;font-size:.9rem}
+.card p{margin-top:10px;color:#3c5836;font-size:.95rem}
+.badge{display:inline-block;background:#dcfce7;color:#166534;padding:3px 14px;border-radius:999px;font-size:.78rem;font-weight:600;margin-bottom:8px}
+a{color:#15803d;text-decoration:none}
+.doclinks a{background:#f0f7ec;border:1px solid #cfe3c4;padding:6px 15px;border-radius:999px;font-size:.85rem;font-weight:500}
+.doclinks a:hover{background:#166534;color:#fff;border-color:#166534}
+.gallery a{border-radius:16px 16px 16px 4px;border:3px solid #fff;box-shadow:0 5px 16px rgba(22,101,52,.12)}
+.research{border-left:5px solid #4ade80}
+.doi{font-family:Consolas,monospace;font-size:.85rem;color:#5f8257}
+.empty{color:#7fa075;font-style:italic;background:#fff;border:2px dashed #cfe3c4;border-radius:16px;padding:18px 22px}
+footer{border-top:2px solid #cfe3c4;color:#7fa075}
+.lang-switch{background:rgba(255,255,255,.92);border:1px solid #cfe3c4;box-shadow:0 4px 14px rgba(22,101,52,.12)}
+.lbtn{color:#5f8257}.lbtn.active{background:#166534;color:#fff}
+.certimg{border-radius:16px;border:3px solid #fff;box-shadow:0 5px 16px rgba(22,101,52,.12)}
 </style></head><body><div class='lang-switch'><button class='lbtn' data-l='vi'>VI</button><button class='lbtn' data-l='en'>EN</button></div><div class='pane-vi' lang='vi'><header><div class='container'><div class='monogram'>KC</div><h1>Nguyễn Khánh Chi</h1><div class='school'>THPT chuyên Hà Nội – Amsterdam · Lớp 11 Địa 1</div><div class='tagline'>Học sinh chuyên Địa lý · Ban Tài chính Green Hanoi Amsterdam · Hoạt động vì môi trường</div><div class='stats'><div class='stat'><b>HSG TP</b><span>Địa lí lớp 12 (2025–26)</span></div><div class='stat'><b>Finance</b><span>Green Hanoi Amsterdam</span></div><div class='stat'><b>5+</b><span>Dự án CLB &amp; thiện nguyện</span></div></div></div></header><main class='container'><section><h2>Giới thiệu</h2><div class='card'><p style='margin-top:0'>Mình là Nguyễn Khánh Chi, học sinh lớp 11 Địa 1, trường THPT chuyên Hà Nội – Amsterdam. Mình yêu thích môn Địa lý và đã đạt giải trong kỳ thi HSG Thành phố lớp 12 khi đang học lớp 11, cùng giải Nhì HSG cấp quận thời THCS. Mình là thành viên Ban Tài chính của Green Hanoi Amsterdam – câu lạc bộ môi trường của trường, tham gia tổ chức nhiều dự án như Green Life, Tết Ấm Áp, Camp Blast và Code of Culture. Mình cũng tham gia ICPC 2026 tại Hàn Quốc và chương trình thiện nguyện Mùa đông ấm.</p></div></section><section><h2>Nghiên cứu khoa học</h2><div class='empty'>Đang cập nhật…</div></section><section><h2>Thành tích & Giải thưởng</h2><div class='card'><h3>Giải Khuyến khích kỳ thi chọn HSG Thành phố các môn văn hóa lớp 12 – môn Địa lí (2025–2026)</h3><div class='org'>Sở GD&amp;ĐT Hà Nội – khi đang học lớp 11</div><div class='doclinks'><a href='assets/img/award-giai-khuyen-khich-ky-thi-chon-hsg-thanh-pho-cac-mo.jpg'>📜 Xem chứng nhận (ảnh)</a></div></div><div class='card'><h3>Giải Nhì kỳ thi chọn HSG Quận các môn văn hóa và khoa học lớp 9 – môn Địa lý (2023–2024)</h3><div class='org'>Phòng GD&amp;ĐT Quận Đống Đa – THCS Nguyễn Trường Tộ</div><div class='doclinks'><a href='assets/img/award-giai-nhi-ky-thi-chon-hsg-quan-cac-mon-van-hoa-va-k.jpg'>📜 Xem chứng nhận (ảnh)</a></div></div><div class='card'><h3>Tham dự ICPC 2026 – International Creative Papers Conference &amp; Olympic, Hàn Quốc</h3><div class='org'>Korea University Invention Association</div></div></section><section><h2>Chứng chỉ chuẩn hóa</h2><div class='empty'>Đang cập nhật…</div></section><section><h2>Hoạt động ngoại khóa & Dự án</h2><div class='card'><h3>Green Hanoi Amsterdam – Thành viên Ban Tài chính (2024–2025)</h3><p>Thành viên Ban Tài chính CLB môi trường Green Hanoi Amsterdam; đóng góp tổ chức chuỗi dự án của CLB: Green Life 2024–2025, Tết Ấm Áp 2025, Camp Blast 2025: Miền Nắng Hạ và Code of Culture 2025.</p><div class='gallery'><a href='assets/img/act0-0.jpg'><img src='assets/img/act0-0.jpg' alt='Green Hanoi Amsterdam – Thành viên Ban Tài chính (2024–2025)' loading='lazy'></a><a href='assets/img/act0-1.jpg'><img src='assets/img/act0-1.jpg' alt='Green Hanoi Amsterdam – Thành viên Ban Tài chính (2024–2025)' loading='lazy'></a><a href='assets/img/act0-2.jpg'><img src='assets/img/act0-2.jpg' alt='Green Hanoi Amsterdam – Thành viên Ban Tài chính (2024–2025)' loading='lazy'></a><a href='assets/img/act0-3.jpg'><img src='assets/img/act0-3.jpg' alt='Green Hanoi Amsterdam – Thành viên Ban Tài chính (2024–2025)' loading='lazy'></a><a href='assets/img/act0-4.jpg'><img src='assets/img/act0-4.jpg' alt='Green Hanoi Amsterdam – Thành viên Ban Tài chính (2024–2025)' loading='lazy'></a></div></div><div class='card'><h3>ICPC 2026 – International Creative Papers Conference &amp; Olympic (Hàn Quốc)</h3><p>Tham dự hội nghị và cuộc thi sáng tạo ICPC 2026 do Korea University Invention Association tổ chức, 16–17/01/2026.</p><div class='gallery'><a href='assets/img/act1-0.jpg'><img src='assets/img/act1-0.jpg' alt='ICPC 2026 – International Creative Papers Conference &amp; Olympic (Hàn Quốc)' loading='lazy'></a><a href='assets/img/act1-1.jpg'><img src='assets/img/act1-1.jpg' alt='ICPC 2026 – International Creative Papers Conference &amp; Olympic (Hàn Quốc)' loading='lazy'></a></div></div><div class='card'><h3>Thiện nguyện “Mùa đông ấm” 2025</h3><p>Tham gia chương trình thiện nguyện Mùa đông ấm, quyên góp và trao quà ấm cho trẻ em vùng cao.</p><div class='gallery'><a href='assets/img/act2-0.jpg'><img src='assets/img/act2-0.jpg' alt='Thiện nguyện “Mùa đông ấm” 2025' loading='lazy'></a></div></div></section></main><footer>© 2026 Nguyễn Khánh Chi · Portfolio học sinh</footer></div><div class='pane-en' lang='en'><header><div class='container'><div class='monogram'>KC</div><h1>Nguyễn Khánh Chi</h1><div class='school'>Hanoi – Amsterdam High School for the Gifted · Class 11 Geography 1</div><div class='tagline'>Geography-major student · Finance member of Green Hanoi Amsterdam · Environmental activities</div><div class='stats'><div class='stat'><b>City prize</b><span>Grade-12 Geography (2025–26)</span></div><div class='stat'><b>Finance</b><span>Green Hanoi Amsterdam</span></div><div class='stat'><b>5+</b><span>Club &amp; charity projects</span></div></div></div></header><main class='container'><section><h2>About Me</h2><div class='card'><p style='margin-top:0'>I am Nguyen Khanh Chi, a student of Class 11 Geography 1 at Hanoi – Amsterdam High School for the Gifted. I love Geography and won a prize at the Hanoi City Grade-12 Contest while still in grade 11, plus a district Second Prize in middle school. I am a Finance-team member of Green Hanoi Amsterdam — our school&#x27;s environmental club — helping organize projects such as Green Life, Warm Tet, Camp Blast and Code of Culture. I also attended ICPC 2026 in Korea and joined the Warm Winter charity program.</p></div></section><section><h2>Research</h2><div class='empty'>Coming soon…</div></section><section><h2>Honors & Awards</h2><div class='card'><h3>Consolation Prize – Hanoi City Excellent Student Contest, Grade-12 Geography (2025–2026)</h3><div class='org'>Hanoi Department of Education &amp; Training – achieved while in grade 11</div><div class='doclinks'><a href='assets/img/award-giai-khuyen-khich-ky-thi-chon-hsg-thanh-pho-cac-mo.jpg'>📜 View certificate (image)</a></div></div><div class='card'><h3>Second Prize – District Excellent Student Contest in Geography, Grade 9 (2023–2024)</h3><div class='org'>Dong Da District – Nguyen Truong To Secondary School</div><div class='doclinks'><a href='assets/img/award-giai-nhi-ky-thi-chon-hsg-quan-cac-mon-van-hoa-va-k.jpg'>📜 View certificate (image)</a></div></div><div class='card'><h3>Participant – ICPC 2026 (International Creative Papers Conference &amp; Olympic), Korea</h3><div class='org'>Korea University Invention Association</div></div></section><section><h2>Standardized Tests</h2><div class='empty'>Coming soon…</div></section><section><h2>Extracurriculars & Projects</h2><div class='card'><h3>Green Hanoi Amsterdam – Finance team member (2024–2025)</h3><p>Finance-team member of the Green Hanoi Amsterdam environmental club; helped organize the club&#x27;s project series: Green Life 2024–2025, Warm Tet 2025, Camp Blast 2025: Mien Nang Ha and Code of Culture 2025.</p><div class='gallery'><a href='assets/img/act0-0.jpg'><img src='assets/img/act0-0.jpg' alt='Green Hanoi Amsterdam – Finance team member (2024–2025)' loading='lazy'></a><a href='assets/img/act0-1.jpg'><img src='assets/img/act0-1.jpg' alt='Green Hanoi Amsterdam – Finance team member (2024–2025)' loading='lazy'></a><a href='assets/img/act0-2.jpg'><img src='assets/img/act0-2.jpg' alt='Green Hanoi Amsterdam – Finance team member (2024–2025)' loading='lazy'></a><a href='assets/img/act0-3.jpg'><img src='assets/img/act0-3.jpg' alt='Green Hanoi Amsterdam – Finance team member (2024–2025)' loading='lazy'></a><a href='assets/img/act0-4.jpg'><img src='assets/img/act0-4.jpg' alt='Green Hanoi Amsterdam – Finance team member (2024–2025)' loading='lazy'></a></div></div><div class='card'><h3>ICPC 2026 – International Creative Papers Conference &amp; Olympic (Korea)</h3><p>Attended the ICPC 2026 creative conference and competition organized by the Korea University Invention Association, Jan 16–17, 2026.</p><div class='gallery'><a href='assets/img/act1-0.jpg'><img src='assets/img/act1-0.jpg' alt='ICPC 2026 – International Creative Papers Conference &amp; Olympic (Korea)' loading='lazy'></a><a href='assets/img/act1-1.jpg'><img src='assets/img/act1-1.jpg' alt='ICPC 2026 – International Creative Papers Conference &amp; Olympic (Korea)' loading='lazy'></a></div></div><div class='card'><h3>“Warm Winter” charity program 2025</h3><p>Joined the Warm Winter charity program, donating and delivering warm gifts to children in mountainous areas.</p><div class='gallery'><a href='assets/img/act2-0.jpg'><img src='assets/img/act2-0.jpg' alt='“Warm Winter” charity program 2025' loading='lazy'></a></div></div></section></main><footer>© 2026 Nguyễn Khánh Chi · Student Portfolio</footer></div><script>function setLang(l){document.body.classList.toggle('lang-en',l==='en');document.documentElement.lang=l;try{localStorage.setItem('lang',l)}catch(e){}document.querySelectorAll('.lbtn').forEach(function(b){b.classList.toggle('active',b.dataset.l===l)});}document.querySelectorAll('.lbtn').forEach(function(b){b.addEventListener('click',function(){setLang(b.dataset.l)})});var saved='vi';try{saved=localStorage.getItem('lang')||'vi'}catch(e){}setLang(saved);</script></body></html>
